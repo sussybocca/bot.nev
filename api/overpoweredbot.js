@@ -5,8 +5,6 @@ import readline from 'readline';
 import crypto from 'crypto';
 
 // ---------------------- Supabase Client ----------------------
-// For Vercel, you can store these as Vercel secrets and set env vars
-// Example: vercel secrets add SUPABASE_URL <value>
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_KEY;
 
@@ -19,7 +17,10 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // ---------------------- Helpers ----------------------
 function generateAPIKey() {
-  return crypto.randomBytes(16).toString('hex');
+  // Generates a 32-byte key, then encodes as base64 for compactness
+  const randomBytes = crypto.randomBytes(32);
+  const timestamp = Date.now().toString(36); // adds extra uniqueness
+  return `${randomBytes.toString('base64url')}_${timestamp}`;
 }
 
 function moderateContent(files) {
