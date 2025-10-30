@@ -7,6 +7,7 @@
     }
   ],
   "routes": [
-    { "src": "/explore", "dest": "/api/generateExplore.js" }
+    { "src": "/explore", "dest": "/api/generateExplore.js" },
+    { "src": "/api/overpoweredbot", "dest": "/api/overpoweredbot.js" }
   ]
 }
