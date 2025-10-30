@@ -44,7 +44,7 @@
       output.className = 'output';
 
       try {
-        const res = await fetch('/api/overpoweredbot.js', {  // <-- fixed here
+        const res = await fetch('/api/overpoweredbot', {  // <-- fixed here
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ description })
@@ -74,3 +74,4 @@
   </script>
 </body>
 </html>
+
