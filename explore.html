@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Explore Bots</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+.bot { background: #fff; padding: 10px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+</style>
+</head>
+<body>
+<h1>Explore Bots</h1>
+
+    <div class="bot">
+      <h2>Bot_1761788504932</h2>
+      <p>My first custom bot</p>
+      <pre>// No bot file</pre>
+    </div>
+    
+    <div class="bot">
+      <h2>Bot_1761788714057</h2>
+      <p>My first functional test bot</p>
+      <pre>// Auto-generated bot based on user description
+const API_KEY = "e59a8daab1a8bc485c521a8f6983171a";
+const description = "My first functional test bot";
+
+function respond(message) {
+    // Simple bot logic: echo + description
+    return "You said: '" + message + "'. " + description;
+}
+
+// Example: listen for messages (Node.js)
+process.stdin.on('data', (data) => {
+    const msg = data.toString().trim();
+    console.log("[Bot Reply]: " + respond(msg));
+});
+
+console.log("Bot is ready! Use process.stdin to send messages.");</pre>
+    </div>
+    
+    <div class="bot">
+      <h2>Server_1761784548911</h2>
+      <p>dude</p>
+      <pre>// No bot file</pre>
+    </div>
+    
+    <div class="bot">
+      <h2>Test Server</h2>
+      <p>Test description</p>
+      <pre>// No bot file</pre>
+    </div>
+    
+    <div class="bot">
+      <h2>Server_1761782080037</h2>
+      <p>dude</p>
+      <pre>// No bot file</pre>
+    </div>
+    
+    <div class="bot">
+      <h2>Server_1761785070331</h2>
+      <p>dude</p>
+      <pre>// No bot file</pre>
+    </div>
+    
+    <div class="bot">
+      <h2>Bot_1761788357781</h2>
+      <p>My first test bot</p>
+      <pre>// No bot file</pre>
+    </div>
+    
+</body>
+</html>

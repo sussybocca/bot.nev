@@ -1,0 +1,17 @@
+{
+  "name": "overpowered-bot",
+  "version": "1.0.0",
+  "description": "Server moderation bot with custom bot creation and explore page",
+  "type": "module",
+  "main": "overpoweredBot.js",
+  "scripts": {
+    "start": "node overpoweredBot.js",
+    "explore": "node generateExplore.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^3.8.0",
+    "dotenv": "^16.3.1"
+  }
+}
